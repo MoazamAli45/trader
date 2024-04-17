@@ -1,0 +1,235 @@
+/* You can add your custom styles here */
+/* @font-face {
+    font-display: swap;
+    font-family: eicons;
+    src: url(../../../../../../../../../../plugins/elementor/assets/lib/eicons/fonts/eicons66e9.eot?5.21.0);
+    src: url(../../../../../../../../../../plugins/elementor/assets/lib/eicons/fonts/eicons66e9.eot?5.21.0#iefix) format("embedded-opentype"), url(../../../../../../../../../../plugins/elementor/assets/lib/eicons/fonts/eicons66e9.woff2?5.21.0) format("woff2"), url(../../../../../../../../../../plugins/elementor/assets/lib/eicons/fonts/eicons66e9.woff?5.21.0) format("woff"), url(../../../../../../../../../../plugins/elementor/assets/lib/eicons/fonts/eicons66e9.ttf?5.21.0) format("truetype"), url(../../../../../../../../../../plugins/elementor/assets/lib/eicons/fonts/eicons66e9.svg?5.21.0#eicon) format("svg");
+    font-weight: 400;
+    font-style: normal
+} */
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: black;
+}
+
+.main-section {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../images/anonym2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#apple {
+  z-index: 10;
+  cursor: pointer;
+}
+.main-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #00000000 63%, #000000 100%);
+}
+
+.tele {
+  padding-top: 50px;
+}
+
+.content-section {
+  padding: 40px 20px;
+  width: 500px;
+  background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5));
+  border-radius: 10px;
+  margin-left: 50px;
+  color: white;
+  height: 100%;
+}
+.free {
+  font-size: 14px;
+}
+
+.title {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+.Electrolize {
+  text-align: center;
+  color: #e7e3e3;
+  font-family: "Electrolize", Sans-serif;
+  font-size: 1.2vw;
+  font-weight: 400;
+  text-transform: none;
+  font-style: normal;
+  letter-spacing: 0.02em;
+}
+
+.button img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.button:hover img {
+  transform: scale(1.1); /* Adjust zoom level as needed */
+}
+
+.download {
+  padding: 20px;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+.download h1 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.download p {
+  opacity: 0.6;
+  margin: 0;
+}
+.store img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-section {
+  padding: 50px 0px;
+  margin: 0px 20px;
+  color: #fff;
+}
+.carousel-container {
+  position: relative;
+}
+.carousel-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/pic-2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+.group {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.slide img {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.slider-section {
+  overflow: hidden;
+  padding: 30px 0px;
+}
+
+.slider {
+  display: flex;
+  animation: marquee 30s linear infinite;
+}
+
+.slide {
+  flex-shrink: 0;
+  margin-right: 20px; /* Adjust as needed */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.footer-section {
+  padding: 40px 0px;
+  background: #030811;
+}
+
+.footer-descr p {
+  color: white;
+  opacity: 0.6;
+  font-weight: 300;
+}
+
+@media (max-width: 776px) {
+  .main-section {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../images/anonym1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+  .tele {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+  .content-section {
+    padding: 10px 20px;
+    width: 330px;
+    margin: auto;
+    background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5));
+    border-radius: 10px;
+    color: white;
+    height: 100%;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .Electrolize {
+    font-size: 2.2vw;
+    margin: 0;
+  }
+  .download {
+    padding: 5px 0px;
+  }
+  .download h1 {
+    font-size: 14px;
+    margin: 0;
+  }
+  .download p {
+    font-size: 12px;
+  }
+  .store img {
+    width: 200px;
+  }
+  .col-12 {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .Electrolize {
+    font-size: 3.2vw;
+    margin: 0;
+  }
+  .tele {
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+  .group {
+    font-size: 20px;
+  }
+  .slide img {
+    width: 100px;
+  }
+}
